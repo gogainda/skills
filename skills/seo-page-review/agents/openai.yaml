@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Page Review"
+  short_description: "Audit a webpage for basic SEO quality."
+  default_prompt: "Use $seo-page-review to audit a webpage URL and return a concise SEO score, critical issues, and quick wins."
