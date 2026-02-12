@@ -21,6 +21,7 @@ This repo is a monorepo so you can keep many skills in one place.
 | Skill | Purpose | Path |
 |---|---|---|
 | `seo-page-review` | Basic on-page SEO audit for a URL | `skills/seo-page-review` |
+| `karpathy-coding-guidelines` | Coding behavior guardrails for simpler, scoped, verifiable changes | `skills/karpathy-coding-guidelines` |
 
 ## Install A Skill In Codex
 

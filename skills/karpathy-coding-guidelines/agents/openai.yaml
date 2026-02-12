@@ -1,0 +1,4 @@
+interface:
+  display_name: "Karpathy Coding Guidelines"
+  short_description: "Keep code changes simple, scoped, and verifiable."
+  default_prompt: "Use $karpathy-coding-guidelines to guide implementation decisions before coding."
