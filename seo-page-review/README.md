@@ -27,7 +27,7 @@ It returns:
 ```bash
 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo gogainda/codex-skills \
-  --path skills/seo-page-review
+  --path seo-page-review
 ```
 
 Restart Codex after install.
@@ -37,7 +37,7 @@ Restart Codex after install.
 ```bash
 git clone git@github.com:gogainda/codex-skills.git
 mkdir -p ~/.codex/skills
-cp -R codex-skills/skills/seo-page-review ~/.codex/skills/seo-page-review
+cp -R codex-skills/seo-page-review ~/.codex/skills/seo-page-review
 ```
 
 Restart Codex after install.

@@ -24,7 +24,7 @@ It helps enforce:
 ```bash
 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo gogainda/codex-skills \
-  --path skills/karpathy-coding-guidelines
+  --path karpathy-coding-guidelines
 ```
 
 Restart Codex after install.

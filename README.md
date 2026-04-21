@@ -1,4 +1,4 @@
-# codex-skills
+# skills
 
 Central repository for Codex skills.
 
@@ -9,31 +9,72 @@ This repo is a monorepo so you can keep many skills in one place.
 ```text
 .
 ├── README.md
-└── skills/
-    └── <skill-name>/
-        ├── SKILL.md
-        ├── agents/
-        └── references/ (optional)
+└── <skill-name>/
+    ├── SKILL.md
+    ├── agents/
+    └── references/ (optional)
 ```
 
 ## Available Skills
 
 | Skill | Purpose | Path |
 |---|---|---|
-| `seo-page-review` | Basic on-page SEO audit for a URL | `skills/seo-page-review` |
-| `karpathy-coding-guidelines` | Coding behavior guardrails for simpler, scoped, verifiable changes | `skills/karpathy-coding-guidelines` |
+| `seo-page-review` | Basic on-page SEO audit for a URL | `seo-page-review` |
+| `karpathy-coding-guidelines` | Coding behavior guardrails for simpler, scoped, verifiable changes | `karpathy-coding-guidelines` |
+| `mdview-open-markdown` | Open or publish Markdown with mdview.io | `mdview` |
 
-## Install A Skill In Codex
+## Install
 
-Install a specific skill from this repo:
+Install the published skills collection:
 
 ```bash
-~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo gogainda/codex-skills \
-  --path skills/seo-page-review
+npx skills add https://github.com/gogainda/skills/tree/main/skills
 ```
 
-Restart Codex after install.
+Install a single skill directly from this repo:
+
+### `seo-page-review`
+
+```bash
+npx skills add gogainda/skills/seo-page-review
+```
+
+### `mdview-open-markdown`
+
+```bash
+npx skills add gogainda/skills/mdview
+```
+
+### `karpathy-coding-guidelines`
+
+```bash
+npx skills add gogainda/skills/karpathy-coding-guidelines
+```
+
+## Source Formats
+
+```bash
+# GitHub shorthand (owner/repo)
+npx skills add gogainda/skills
+
+# GitHub shorthand with path
+npx skills add gogainda/skills/mdview
+
+# Full GitHub URL
+npx skills add https://github.com/gogainda/skills
+
+# Direct path to a skill in a repo
+npx skills add https://github.com/gogainda/skills/tree/main/skills/mdview
+
+# GitLab URL
+npx skills add https://gitlab.com/org/repo
+
+# Any git URL
+npx skills add git@github.com:gogainda/skills.git
+
+# Local path
+npx skills add ./my-local-skills
+```
 
 ## Use In Codex
 
@@ -45,7 +86,7 @@ $seo-page-review review https://example.com/blog/post
 
 ## Add New Skills
 
-1. Create a new folder under `skills/<new-skill-name>/`.
+1. Create a new folder under `<new-skill-name>/`.
 2. Add `SKILL.md` (required).
 3. Add `agents/openai.yaml` (recommended).
 4. Add `references/` files if needed.
